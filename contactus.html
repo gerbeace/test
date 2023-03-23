@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Gloria+Hallelujah&family=Lalezar&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     
+<!--my css-->
+  <link rel="stylesheet" href="mystyle.css">
+  </head>
+
+  <body>
+    
+
+   <!-- Navigation bar -->
+ <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">WeLovePets <span class="material-symbols-outlined">
+      pets
+      </span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+           <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="dog.html">Dog Section</a></li>
+                <li><a class="dropdown-item" href="food.html">Cat Section</a></li>
+           </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.html">FAQs</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        
+      </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+              <a class="btn btn-outline-light" href="#">SignUp</a>
+          </li>
+          <li class="nav-but ">
+          <a class="btn btn-outline-light" href="#">Login</a>
+        </li>
+
+        <li><a class="nav-link" href="#">
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!------Contact Section----->
+
+  <section class = "contact-section">
+       <div class = "contact-bg">
+              <h3>Stay Connected with Us</h3>
+              <h2>Contact Us</h2>
+              <div class = "line">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+                <p class = "text">If you need to get in touch with us, there are several ways to do so. You can fill out the contact form on our website, which will send us an email with your message. We aim to respond to all inquiries within 24-48 hours. Alternatively, you can send us an email directly to the address provided on our website. We also have a phone number listed, so feel free to give us a call during business hours. Our customer service team is happy to assist you with any questions or concerns you may have. We value your feedback and are always looking for ways to improve our services, so please don't hesitate to reach out to us</p>
+        </div>
+
+      <div class = "contact-body">
+        <div class = "contact-info">
+          <div>
+            <span><i class = "fas fa-mobile-alt"></i></span>
+            <span>Phone No.</span>
+            <span class = "text">09123456790</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-envelope-open"></i></span>
+            <span>E-mail</span>
+            <span class = "text">ace@gmail.com</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-map-marker-alt"></i></span>
+            <span>Address</span>
+            <span class = "text">Kasiglahan Village,San Jose, Rodriguez Rizal</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-clock"></i></span>
+            <span>Opening Hours</span>
+            <span class = "text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+          </div>
+        </div>
+
+         <div class = "contact-form">
+            <form>
+                <div>
+                  <input type = "text" class = "form-control" placeholder="First Name">
+                  <input type = "text" class = "form-control" placeholder="Last Name">
+                </div>
+                <div>
+                  <input type = "email" class = "form-control" placeholder="E-mail">
+                  <input type = "text" class = "form-control" placeholder="Phone">
+                </div>
+                <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+                <input type = "submit" class = "send-btn" value = "send message">
+            </form>
+              <div class="maps" data-aos="fade-up">
+                <iframe class="maps " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.6877769158345!2d121.13563731543258!3d14.73023597783421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bb18144bf653%3A0x34e13592dd4050d0!2sRodriguez%20Hwy%2C%20Rodriguez%2C%20Rizal!5e0!3m2!1sen!2sph!4v1679020338140!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+        </div>
+    </section>
+
+
+   <!---------footer------------>
+
+ <footer class=" text-white pt-5 pb-4">
+      <div class="container-fluid">
+           <div class="row">
+                <div class="col-md-4 text-white text-center">
+                    <div class="social-links">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                        <h6>© 2023 WeLP. All Rights Reserved.</h6>
+                </div>
+                  <div class="col-md-4 text-center">
+                        <h5>Contacts</h5>
+                        <p>Phone No.: 091234567890</p>
+                        <p>Email: ace@gmail.com</p>
+                  </div>  
+           </div>
+      </div>
+ </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+     <script>
+     AOS.init();
+     </script>
+
+  </body>
+</html>

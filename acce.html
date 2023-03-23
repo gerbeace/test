@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WELP SHOP</title>
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Gloria+Hallelujah&family=Lalezar&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+<!--my css-->
+  <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    
+  <!-- Navigation bar -->
+ <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+
+        <!---logo--->
+        <a class="navbar-brand" href="#">WeLovePets <span class="material-symbols-outlined">
+            pets
+            </span></a>
+
+            <!---nav toggler----->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="dog.html">Dog Section</a></li>
+                        <li><a class="dropdown-item" href="food.html">Cat Section</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li> 
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">             
+                 <li class="nav-but">
+                    <a class="btn btn-outline-light" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" >Sign Up</a>
+                </li>
+                <li class="nav-but ">
+                    <a class="btn btn-outline-light" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="cart.html">
+                        <span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-----------end navbar---------->
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Not a member yet? <a href="#" data-bs-toggle="modal" data-bs-target="signupModal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Signup form -->
+        <form>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <div class="container">
+
+         <!---------CAT SECTION BANNER---------->   
+
+         <div class="row my-row">
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                        <h1>CAT</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center ">
+                     <div class="box">
+                         <div class="image-container">
+                           <img class="bilog" src="./img/catbanner.jpg" width="200" alt="">
+                         </div> 
+                     </div>
+                </div>
+                 <div class="col-md-4 ">
+                     <div class="box">
+                         <h1>SECTION</h1>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-md-12 text-center ">  
+                <h1 class="cntent-txt">ACCESORIES</h1>
+            </div>
+
+            <!---------END CAT SECTION BANNER---------->
+
+            <!--------DROPDOWN CATEGORIES--------->
+
+       <div class="dropdown drop2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             CATEGORIES
+            </button>
+            <ul class=" dropdown-menu">                      
+                <li><a class="dropdown-item" href="food.html">Food Supply</a></li>
+                <li><a class="dropdown-item" href="grooming.html">Grooming</a></li>
+                <li><a class="dropdown-item" href="acce.html">Accesories</a></li>
+            </ul>
+       </div>
+
+     <div class="dropdown ">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">          
+               SUB-CATEGORIES
+              </button>
+
+        <ul class=" dropdown-menu"> 
+            <li><a class="dropdown-item" href="#">Toys</a></li>
+            <li><a class="dropdown-item" href="#feed">Feeders & Bowls</a></li>
+            <li><a class="dropdown-item" href="#litter">Litter</a>
+        </ul>
+    </div>
+        
+        <div class="row g-3">
+        <h1 class="cntent-txt ">Toys</h1>
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/red.webp" class="card-img-top img-fit" alt="">
+                            <img src="./img/red2.webp" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Yeti pet cave's handmade</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;1200.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/laser.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/laser2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Laser Classic</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;99.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/lightlaser0.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/lightlaser.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Mouse Laser</b></h5> 
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;110.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+            <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/feather.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/feather2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Feather Waggler</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;120.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/waggler.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/waggler2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Waggler Classic</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;120.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                     <div class="box">
+                                <div class="image-container">
+                                    <img src="./img/kong.jpg" class="card-img-top img-fit" alt="">
+                                    <img src="./img/kong2.jpg" class="hover-img card-img-top img-fit" alt="">
+                                </div>
+                            <div class="card-body1">
+                                    <h5 class="card-title"><b>Kong Wrangler Catnip</b></h5>
+                                 <div class="text-end">
+                                    <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;120.00</a>
+                                 </div>
+                            </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/kong3.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/kong4.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Catnip purrito</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;100.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/3in1.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/3in1c.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Tunnel 3 in 1</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;1300.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/pad.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/pad1.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>XL Cat Den with Scratching Pad</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;1200.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="row g-3">
+                        <h1 class="cntent-txt1 contact-form"id="feed"> Feeders & Bowls</h1>
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/surefeed.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/surefeed2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>SureFeed Sealed Pet Bowl</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;500.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/micro.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/micro2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>SureFeed Microchip Feeder</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;700.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/petsafe.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/petsafe2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>PetSafe Automatic 2 Meal</b></h5>                      
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;1500.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/water.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/water2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Savic Loop Water Dispenser</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;99.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/food2in1.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/food2in1c.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Food & Water Dispenser 2in1</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;1400.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/slow.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/slow2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Eating Bowl Stainless</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;120.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                        <h1 class="cntent-txt contact-form"id="litter">Litter</h1>
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/tigerino.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/tigerino2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>2 x 12kg Tigerino Premium</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;120.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/world.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/world2.jpg" class="hover-img card-img-top img-fit" alt="">World's Best Cat Litter 
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b></b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;130.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/green.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/green2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Greenwoods Plant Fibre</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;150.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/outdoor.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/outdoor2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Ferplast Outdoor Litter Tray</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;300.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/scoop.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/scoop2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>PetSafe ScoopFree Ultra</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;150.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/mod.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/mod2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Modkat XL Litter Box</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;110.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/savic.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/savic2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Savic Litter Tray Mira</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;500.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/trixie.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/trixie2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Trixie cat house for litter tray XL</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;720.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">    
+                    <div class="box">
+                        <div class="image-container">
+                            <img src="./img/catit.jpg" class="card-img-top img-fit" alt="">
+                            <img src="./img/catit2.jpg" class="hover-img card-img-top img-fit" alt="">
+                        </div>
+                        <div class="card-body1">
+                            <h5 class="card-title"><b>Catit Jumbo Litter Box</b></h5>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-outline-primary">Shop Now - &#8369;220.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+     <!---------footer------------>
+
+ <footer class=" text-white pt-5 pb-4">
+      <div class="container-fluid">
+           <div class="row">
+                <div class="col-md-4 text-white text-center">
+                    <div class="social-links">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                        <h6>© 2023 WeLP. All Rights Reserved.</h6>
+                </div>
+                  <div class="col-md-4 text-center">
+                        <h5>Contacts</h5>
+                        <p>Phone No.: 091234567890</p>
+                        <p>Email: ace@gmail.com</p>
+                  </div>  
+           </div>
+      </div>
+ </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+     <script>
+     AOS.init();
+     </script>
+     
+</body>
+</html>
