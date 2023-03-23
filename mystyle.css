@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Gloria+Hallelujah&family=Gochi+Hand&family=Lalezar&family=Rum+Raisin&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background: linear-gradient(185deg, rgba(182,200,255,1) 0%, rgba(82,118,255,0) 1%);
+	font-family: 'Poppins', sans-serif;
+
+}
+/*********homepage container********/
+
+.container{
+	padding:20px 5px;
+}
+
+/**********navbar**********/
+
+.navbar{
+	background-color: #0b408f;
+}
+
+.navbar .navbar-nav .nav-item a{
+    padding: 15px;
+}
+
+.navbar .navbar-nav .nav-but{
+    padding: 5px;
+}
+
+.navbar .nav-item a {
+	color: #fff;
+}
+
+.nav-item a:hover{
+	color: yellow;
+}
+
+.navbar-brand{
+	font-family: 'Caveat', cursive;
+	color: white;
+	font-size: 35px;
+    padding: 0 25px;
+}
+
+.navbar-brand:active, .navbar-brand:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand:hover{
+	color: white;
+}
+.material-symbols-outlined{
+    color: white;
+}
+.material-symbols-outlined:hover{
+    color: yellow;
+}
+
+/*******dropdown*********/
+
+.dropdown-item:hover{
+    background-color:#0b408f ;
+}
+.dropdown-menu{
+	background-color: #0b408f;
+}
+
+.dropdown-menu a{
+    color: white;
+}
+.dropdown-menu a:hover{
+    color: yellow;
+}
+
+.dropdown button{
+background-color: #0b408f;
+}
+
+
+/*footer*/
+
+footer{
+background: #0b408f;
+}
+
+/*********shop by pet (homepage)******/
+
+.bilog1{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: solid #0b408f 10px;
+}
+.bilog1:hover{
+
+    border-color: yellow;
+}
+
+/*youtube ads*/
+
+.youtube-ads {
+    width: 100%;
+    max-width: 960px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Set the aspect ratio (16:9) */
+    width: 80%; /* Set the width to 50% of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.youtube-ads h5 {
+  margin-top: 20px; /* adjust as needed */
+  font-size: 24px; /* adjust as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*content text (homepage*/
+
+.cntent-txt {
+	font-family: 'Lalezar', cursive;
+}
+  
+
+/*social links*/
+
+.social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #0b408f;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+.social-links a:hover{
+	background-color: yellow;
+}
+
+/*Card */
+.card .img-fit {
+     
+}
+
+.card {   
+    height: 100%;  
+}
+
+.zoom-effect{
+     transition: transform .2s;
+
+}
+.zoom-effect:hover{
+     transform:scale(1.1);
+}
+.card-body {
+    
+    height: 100%;
+    flex-direction: column;
+    background:white;
+}
+.card-title{
+    padding: 10px;
+}
+
+/***shop ***/
+.box .img-fit {
+height: 50vh;
+}
+
+.box {
+  background-color: #f2f2f2; 
+  border-radius: 10px; 
+  padding: 20px; 
+}
+.image-container {
+        position: relative;
+        width: 100%;
+
+    }
+    .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.7s ease-in-out;
+    }
+    .image-container:hover .hover-img {
+        opacity: 1;
+    }
+/*****contactus*****/
+
+.contact-bg {
+    background: url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+ 
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .contact-bg h3 {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .contact-bg h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    margin: 0 30px;
+    background: blue;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+}
+  .text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+.contact-section {
+    padding: 50px 0;
+  }
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/***********information***********/
+
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: blue;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+
+/*******Contact Form********/
+
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+/*send message button*/
+
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+
+.maps{
+
+	padding: 15px 0;
+
+	width: 67vw;
+}
+
+/*responsive*/
+
+@media (max-width: 768px) {
+    .contact-bg {
+      padding: 30px;
+    }
+    .contact-bg h3 {
+      font-size: 28px;
+    }
+    .contact-bg h2 {
+      font-size: 36px;
+    }
+    .text {
+      font-size: 16px;
+    }
+  }
+    .contact-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+    width: 50%;
+}
+    .contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*****end of contact us****/
+
+
+/*faqs*/
+.faqs-headings{
+    text-align: center;
+    margin: 50px 0 !important;
+}
+
+.accordion-item{
+    border: none;
+    background-color:floralwhite;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.accordion-button:hover{
+    background: skyblue;
+}
+
+
+/***dog and cat section *****/
+
+.bilog{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: solid #0b408f 10px;
+}
+
+.my-row{
+    background: #f2f2f2;
+    font-size: 120px;
+
+}
+.box h1{
+    font-size: 120px;
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+
+
+/************cart*************/
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.wrapper span {
+  cursor: pointer;
+}
